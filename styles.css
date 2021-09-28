@@ -1,0 +1,83 @@
+* {
+	
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 span {
+	color: hsl(0, 0%, 59%);
+	font-weight: normal;
+}
+
+.sub {
+	color: hsl(0, 0%, 59%);
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#email {
+	border: 1px block hsl(0, 0%, 59%);
+	border-radius: 20px;
+	margin: 0px 0px 10px 0px;
+	padding: 5px;
+	width: 120%;
+}
+#email:invalid {
+	border: 1px solid red;
+}
+#submit {
+	border: 0px;
+	border-radius: 20px;
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+	width: 120%;
+	background-color: hsl(223, 87%, 63%);
+	color: white;
+	font-size: 60%;
+}
+.illustration {
+	width: 100%;
+	padding: 0px;
+}
+
+.links {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.links img {
+	width: 20px;
+}
+.copyright {
+	color: hsl(0, 0%, 59%);
+}
+
+@media screen and (min-width: 700px) {
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	main {
+		width: 60%;
+	}
+	form {
+		display: flex;
+		flex-direction: row;
+		width: 80%;
+	}
+	#submit {
+		margin-left: 10px;
+		width: 27%;
+	}
+	#email {
+		width: 70%;
+	}
+}
